@@ -35,7 +35,7 @@ const SpaceWarp = () => {
             starGeo.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
             starGeo.userData = { velocities, accelerations };
 
-            let sprite = new THREE.TextureLoader().load('star.png');
+            let sprite = new THREE.TextureLoader().load('/images/star.png');
             let starMaterial = new THREE.PointsMaterial({
                 color: 0xaaaaaa,
                 size: 0.7,
